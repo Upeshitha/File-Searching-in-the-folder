@@ -14,11 +14,6 @@ import java.io.File;
  */
 public class FindFilesName {
 
-    Home home = new Home();
-
-    //private static final String fileLocation = "E:\\User\\Downloads\\Files";
-    //private String searchThisExtn = home.getFileType();
-
     public void listFiles(String location, String extension){
 
         SearchFiles files = new SearchFiles(extension);
@@ -36,9 +31,8 @@ public class FindFilesName {
             return;
         }
         for(String file : list){
-            String temp = new StringBuffer(location).append(File.separator)
-                    .append(file).toString();
-            System.out.println("File : " +temp);
+            String temp = new StringBuffer().append(file).toString();
+            System.out.println(temp);
         }
     }
 }
