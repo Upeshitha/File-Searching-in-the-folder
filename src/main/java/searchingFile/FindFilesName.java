@@ -13,7 +13,12 @@ import java.io.File;
  * @since : 2021/03/09
  */
 public class FindFilesName {
-
+    /**
+     * search user type file extension, is there in the folder.
+     *
+     * @param location   get full file location
+     * @param extension  get file extension
+     */
     public void listFiles(String location, String extension){
 
         SearchFiles files = new SearchFiles(extension);

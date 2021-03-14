@@ -15,10 +15,25 @@ public class SearchFiles implements FilenameFilter {
 
     private String extension;
 
+    /**
+     * SearchFiles constructor, which is assign the user want
+     * file extension.
+     *
+     * @param extension
+     */
     public SearchFiles(String extension){
         this.extension = extension;
     }
 
+    /**
+     * implemented the FilenameFilter interface
+     * used for every file is tested
+     *
+     * @param dir   directory name
+     * @param name  file name
+     * @return true/false  the filename starts with the specified initials
+     *                     then return true else return false.
+     */
     @Override
     public boolean accept(File dir, String name) {
         if(name.lastIndexOf('.') > 0){
