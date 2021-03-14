@@ -23,4 +23,5 @@ manifest.mf
 #idea folder
 .idea/
 
+csv,exceltoJSON_Java8.iml
 JSON_Converter.iml

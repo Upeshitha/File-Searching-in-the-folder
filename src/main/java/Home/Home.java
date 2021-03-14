@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Home {
 
     private static String fileType;
-    private static final String fileLocation = "E:\\User\\Downloads\\Files";
+    private static final String fileLocation = "E:\\User\\Downloads\\Files"; //change your target directory path
 
     public static void main(String[] args) {
         Home home = new Home();
@@ -27,8 +27,8 @@ public class Home {
     public void chooseFileType(){
         Scanner input = new Scanner(System.in);
 
-        System.out.println("What type of files do you want to convert to JSON? \n" +
-                "excel or csv");
+        System.out.println("Type want to search file extension with dot mark \n" +
+                ".PDF | .XLSX | .TXT | .PPT");
         fileType = input.nextLine();
     }
 
